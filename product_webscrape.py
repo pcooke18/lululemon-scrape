@@ -27,7 +27,7 @@ if myResponse.status_code == 200:
 
     prod_price = []
     [prod_price.append(x.span.text) for x in price]
-    prod_price = [p.lstrip("$") for p in prod_price] #prod_price = [x[1:] for x in prod_price]
+    prod_price = [p.lstrip("$") for p in prod_price] #another way to accomplish this: prod_price = [x[1:] for x in prod_price]
 
 ## Test out whether I can replicate and use a link from the prod_url to access information on the specific page
 
@@ -60,8 +60,9 @@ lulu_dict = {
 lulu_df = pd.DataFrame(lulu_dict)
 print(lulu_df)
 
-lulu_df.to_csv(index = False)
+lulu_df.to_csv("/Users/piersoncooke/GitHub Practice Repos/lululemon-scrape/first_attempt.csv", index = False)
 
 # colors = []
 # temp1 = soup.find_all("img", class_ = "colorSwatchImg-2mYJB")
 # [colors.append(x.get("alt")) for x in temp1]
+# once I figure out how to select the colors I want to join the list and then paste in as a column value
