@@ -15,7 +15,7 @@ if myResponse.status_code == 200:
     product = soup.find_all('a', class_ = 'link lll-font-weight-medium')
 
     prod_name = []
-    [prod_name.append(x.strings) for x in product]
+    [prod_name.append(x.string) for x in product]
 
     url_base = "https://shop.lululemon.com"
 
