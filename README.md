@@ -3,4 +3,4 @@ This is a project to gather product information and reviews of mens pant's on Lu
 
 I will be using the BeautifulSoup package in Python in order to collect all the information.
 
-I'm seeing how I can save and push to GitHub
+I am starting this project by collecting details and reviews of the product, then plan to use NLP analysis to look further into the product reviews.
